@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Questions Forum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .topic-list {
+            list-style: none;
+            padding: 0;
+        }
+        .topic-list li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 18px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .topic-list li:last-child {
+            border-bottom: none;
+        }
+        .topic-title {
+            font-size: 1.1em;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .topic-title:hover {
+            text-decoration: underline;
+        }
+        .topic-meta {
+            font-size: 0.95em;
+            color: #888;
+        }
+        .new-topic-btn {
+            display: inline-block;
+            background: #2980b9;
+            color: #fff;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .new-topic-btn:hover {
+            background: #3498db;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: #2980b9;
+            text-decoration: none;
+            font-size: 0.98em;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 15px;
+            }
+            .topic-list li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medical Questions</h1>
+        <p>Ask and discuss medical topics with the community</p>
+    </header>
+    <main>
+        <a href="index.html" class="back-link">&larr; Back to Forum Topics</a>
+        <a href="#" class="new-topic-btn">Start New Medical Topic</a>
+        <h2>Recent Medical Discussions</h2>
+        <ul class="topic-list">
+            <li>
+                <a href="#" class="topic-title">What are common side effects of antibiotics?</a>
+                <span class="topic-meta">12 replies</span>
+            </li>
+            <li>
+                <a href="#" class="topic-title">How to manage chronic pain?</a>
+                <span class="topic-meta">8 replies</span>
+            </li>
+            <li>
+                <a href="#" class="topic-title">Best practices for wound care?</a>
+                <span class="topic-meta">5 replies</span>
+            </li>
+            <li>
+                <a href="#" class="topic-title">Understanding blood test results</a>
+                <span class="topic-meta">9 replies</span>
+            </li>
+        </ul>
+    </main>

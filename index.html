@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community Forum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .forum-list {
+            list-style: none;
+            padding: 0;
+        }
+        .forum-list li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 18px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .forum-list li:last-child {
+            border-bottom: none;
+        }
+        .forum-title {
+            font-size: 1.1em;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .forum-title:hover {
+            text-decoration: underline;
+        }
+        .forum-meta {
+            font-size: 0.95em;
+            color: #888;
+        }
+        .new-topic-btn {
+            display: inline-block;
+            background: #2980b9;
+            color: #fff;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .new-topic-btn:hover {
+            background: #3498db;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 15px;
+            }
+            .forum-list li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+        <p>Connect, share, and discuss with others</p>
+    </header>
+    <main>
+        <a href="#" class="new-topic-btn">Start New Topic</a>
+        <h2>Forum Topics</h2>
+        <ul class="forum-list">
+            <li>
+                <a href="medical-questions.html" class="forum-title">Medical Questions</a>
+                <span class="forum-meta">37 topics</span>
+            </li>
+            <li>
+                <a href="#" class="forum-title">Therapy & Counseling</a>
+                <span class="forum-meta">22 topics</span>
+            </li>
+            <li>
+                <a href="#" class="forum-title">Treatment Experiences</a>
+                <span class="forum-meta">18 topics</span>
+            </li>
+            <li>
+                <a href="#" class="forum-title">Support & Recovery</a>
+                <span class="forum-meta">14 topics</span>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
